@@ -1,0 +1,8 @@
+.idea/
+manage.py
+templates/
+typeidea/
+venv/
+*.pyc
+*.swp
+*.sqlite3
