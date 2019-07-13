@@ -42,6 +42,9 @@ class Tag(models.Model):
         verbose_name = "标签"
         verbose_name_plural = verbose_name
 
+    def __str__(self):
+        return self.name
+
 
 class Post(models.Model):
     STATUS_NORMAL = 1
@@ -66,3 +69,6 @@ class Post(models.Model):
         verbose_name = "文章"
         verbose_name_plural = verbose_name
         ordering = ['-created_time']
+
+    def __str__(self):
+        return self.title

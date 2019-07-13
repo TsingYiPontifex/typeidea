@@ -4,7 +4,7 @@ from blog.models import Post
 
 # Create your models here.
 
-class comment(models.Model):
+class Comment(models.Model):
     STATUS_NORMAL = 1
     STATUS_DEL = 0
     STATUS_ITEMS = (
